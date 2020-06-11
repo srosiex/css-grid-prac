@@ -76,12 +76,43 @@ img {
 
 /* Showcase */
 
+/* grid to layout boxes, flexbox to align elements */
+
 .showcase {
     grid-area: showcase;
     min-height: 400px;
     background: url(img/showcase.jpg);
     background-size: cover;
     background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--light)
+}
+
+.showcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--light)
+}
+
+/* Top Box */
+
+.top-box {
+    background-color: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
 }
 
 .top-box-a {
